@@ -1,6 +1,6 @@
 # Buffalo-SNES-xboxdrv
 
-Buffalo Snes xboxdrv - script to map snes controller to work with steam using xboxdrv & evtest
+Buffalo Snes xboxdrv - script to map snes controller to work with steam using xboxdrv & evtest running in arch linux.
 
 # Usage
 
@@ -16,7 +16,7 @@ The controller is the [Buffalo Classic USB Gamepad](http://www.amazon.com/Buffal
 
 ## Running the script
 
-run '''evtest''' inside a terminal to determine your controllers event number which should be printed out '''/dev/input/eventN''' where N is the event number. My controller gets displayed as '''/dev/input/event13'''
+Run ```evtest``` inside a terminal to determine your controllers event number which should be printed out ```/dev/input/eventN``` where N is the event number. My controller gets displayed as ```/dev/input/event13```
 
 Run the script and enter in your event number and the script will configure your controller to be recognized as a 360 controller for use in Steam. The script starts and stops services which will require your password if you are not root while running.
 

@@ -1,9 +1,14 @@
 echo "This program uses your controller event number."
 echo "Run evtest to find your event number"
 sleep 3
+
+# Get event number for controller
+
 read -p "Enter event number: " event
 echo "Okay! disabling xpad . . ."
-echo $path
+
+# disable xpad to start xboxdrv service
+
 $(rmmod xpad)
 echo "xpad disabled . . . starting xboxdrv"
 $(systemctl start xboxdrv.service)

@@ -1,6 +1,6 @@
-# Buffalo-SNES-xboxdrv
+# xboxdrv_controller_configs
 
-Buffalo Snes xboxdrv - script to map snes controller to work with steam using xboxdrv & evtest running in arch linux.
+xboxdrv_controller_configs - script to map snes & ps3 controllers to work with steam using xboxdrv & evtest running in arch linux.
 
 # Usage
 
@@ -12,12 +12,10 @@ At this time this script has only been tested in [arch linux](https://www.archli
 
 ## Controller
 
-The controller is the [Buffalo Classic USB Gamepad](http://www.amazon.com/Buffalo-Classic-USB-Gamepad-PC/dp/B002B9XB0E). Currently this is the only controller I have tested the script on but I may add more controller configurations later.
+The controller is the [Buffalo Classic USB Gamepad](http://www.amazon.com/Buffalo-Classic-USB-Gamepad-PC/dp/B002B9XB0E) & the [Sony Playstation dualshock 3/PS3 controller](http://www.amazon.com/PlayStation-Dualshock-Wireless-Controller-Black-3/dp/B0015AARJI). I may add more controller configurations later.
 
 ## Running the script
 
 Run ```evtest``` inside a terminal to determine your controllers event number which should be printed out ```/dev/input/eventN``` where N is the event number. My controller gets displayed as ```/dev/input/event13```
 
 Run the script and enter in your event number and the script will configure your controller to be recognized as a 360 controller for use in Steam. The script starts and stops services which will require your password if you are not root while running.
-
-On my computer, the controller does not start functioning until about a minute after xboxdrv starts.
